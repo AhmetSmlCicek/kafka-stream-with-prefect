@@ -14,6 +14,6 @@ The pipeline is designed as ELT pipeline and consist of different components inc
 # Run
 To run the project, you should have Kafka and Prefect installed in your machine. For this please check, https://kafka.apache.org/quickstart and https://docs.prefect.io/getting-started/overview/. After you have them (and make sure the are running in your machine), all you need to do is to deploy your workflow with command of "prefect deployment run boss/kafka-train". By deploying, you can make use of Prefect trigger so you can schedule your data pipeline as you wish. 
 
-#TO DO
+# TO DO
 Aim of this project is to create end-to-end data pipeline. After collecting the data, the created files (in csv format) would be stored in Azure Blob containers instead of local machine. From there, we can do simple transformation with Data Factory and display important insights through Power BI.
 Cloud integration part will be added later on.
