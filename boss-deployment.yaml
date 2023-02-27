@@ -1,0 +1,44 @@
+###
+### A complete description of a Prefect Deployment for flow 'boss'
+###
+name: kafka-train
+description: null
+version: ce43f000b401b432c4753d1310cb03d8
+# The work queue that will handle this deployment's runs
+work_queue_name: kafka2
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+is_schedule_active: null
+infra_overrides:
+  env:
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command:
+  - python
+  - -m
+  - prefect.engine
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: boss
+manifest_path: null
+storage: null
+path: /Users/ahmetsamilcicek/Desktop/becode/project/prefect-tutorial
+entrypoint: kafkatest.py:boss
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
+timestamp: '2023-02-23T13:34:24.881717+00:00'
